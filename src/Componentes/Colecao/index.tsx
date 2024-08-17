@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import imagemTitulo from "../../assets/vector.svg";
 import Card from "../Card";
+import Footer from "../Footer";
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -90,6 +91,7 @@ const Container = () => {
                 <BotaoEstilizado>Available Now</BotaoEstilizado>
             </BotaoContainer>
             <Card />
+            <Footer />
         </ContainerEstilizacao>
     </>
     )
