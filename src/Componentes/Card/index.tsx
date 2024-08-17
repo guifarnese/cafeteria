@@ -11,6 +11,16 @@ const CardEstilizacao = styled.div`
     justify-items: center;
     align-items: start;
     padding: 20px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 `
 
 const CardItem = styled.div`
@@ -18,11 +28,19 @@ const CardItem = styled.div`
     flex-direction: column;
     width: 100%;
     position: relative;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 const Imagem = styled.img`
     width: 100%;
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+        border-radius: 4px;
+    }
 `
 
 const TituloEstilizacao = styled.h2`
@@ -33,6 +51,10 @@ const TituloEstilizacao = styled.h2`
     margin-top: 1rem;
     align-items: flex-start;
     text-align: left;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 `
 
 const FavoritoContainer = styled.div`
@@ -70,6 +92,10 @@ const PrecoEstilizacao = styled.span`
     background-color: #BEE3CC;
     padding: 0.5em 0.8em;
     border-radius: 4px;
+
+    @media (max-width: 768px) {
+        bottom: 1.5rem;
+    }
 `
 
 const PopularSection = styled.div`
@@ -84,6 +110,12 @@ const PopularSection = styled.div`
     padding: 0.3rem 0.8rem;
     border-radius: 12px;
     z-index: 1;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        top: 5px;
+        left: 5px;
+    }
 `
 
 const Card = () => {

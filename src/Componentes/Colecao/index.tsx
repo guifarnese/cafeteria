@@ -27,6 +27,18 @@ const ContainerEstilizacao = styled.div`
     width: 100%;
     z-index: 10;
     background-color: #1B1D1F;
+
+    @media (max-width: 1024px) {
+        top: 20%;
+        padding: 1.5rem;
+        background-position: 60% 30%;
+    }
+
+    @media (max-width: 768px) {
+        top: 10%;
+        padding: 1rem;
+        background-position: center;
+    }
 `
 
 const ImagemTitulo = styled.div`
@@ -39,6 +51,10 @@ const TituloEstilizacao = styled.h1`
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
 `
 
 const ParagrafoEstilizacao = styled.p`
@@ -51,12 +67,21 @@ const ParagrafoEstilizacao = styled.p`
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 `
 
 const BotaoContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 `
 
 const BotaoEstilizado = styled.button`
@@ -71,6 +96,11 @@ const BotaoEstilizado = styled.button`
     &:hover {
         background-color: #6F757C;
         border-radius: 4px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 12px;
+        padding: 0.5rem;
     }
 `
 
